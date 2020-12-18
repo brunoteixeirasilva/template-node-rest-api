@@ -1,4 +1,4 @@
-# seed-firebase-api
+# template-firebase-nodejs-rest-api
 
 Origin for standardised Firebase structured API.
 
