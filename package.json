@@ -1,0 +1,39 @@
+{
+	"main": "dist/index.js",
+	"scripts": {
+		"lint": "xo",
+		"setup": "yarn firebase use --add ",
+		"build": "babel 'src' -d 'dist'  ",
+		"postbuild": "cd ../ && cp -f -r taugor-bpmn-api/dist/. taugor-bpmn-firebase/functions/dist && cp taugor-bpmn-api/package.json taugor-bpmn-firebase/functions/package.json && cp taugor-bpmn-api/src/bpmn-taugor-firebase-adminsdk-la1v8-17ca4ec8bc.json taugor-bpmn-firebase/functions/dist/bpmn-taugor-firebase-adminsdk-la1v8-17ca4ec8bc.json",
+		"watch": "yarn build --watch",
+		"serve": "yarn watch & yarn firebase serve --only functions",
+		"predeploy": "yarn build",
+		"deploy": "yarn firebase deploy --only functions"
+	},
+	"engines": {
+		"node": "10"
+	},
+	"xo": {
+		"space": true
+	},
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"core-js": "^3.2.1",
+		"firebase-admin": "^8.0.0",
+		"firebase-functions": "^3.1.0",
+		"grpc": "^1.23.2",
+		"@zerobytes/firebase-basic-service": "*",
+		"@zerobytes/object-model-js": "*"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.4.3",
+		"@babel/core": "^7.4.3",
+		"@babel/preset-env": "^7.4.3",
+		"firebase-functions-test": "^0.1.6",
+		"firebase-tools": "^7.9.0",
+		"xo": "^0.24.0"
+	},
+	"private": true
+}

@@ -1,0 +1,469 @@
+[debug] [2019-12-09T07:00:50.959Z] ----------------------------------------------------------------------
+[debug] [2019-12-09T07:00:50.961Z] Command:       /usr/local/bin/node /Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/.bin/firebase serve --only functions
+[debug] [2019-12-09T07:00:50.962Z] CLI Version:   7.9.0
+[debug] [2019-12-09T07:00:50.962Z] Platform:      darwin
+[debug] [2019-12-09T07:00:50.962Z] Node Version:  v11.15.0
+[debug] [2019-12-09T07:00:50.963Z] Time:          Mon Dec 09 2019 05:00:50 GMT-0200 (GMT-02:00)
+[debug] [2019-12-09T07:00:50.963Z] ----------------------------------------------------------------------
+[debug] [2019-12-09T07:00:50.963Z] 
+[debug] [2019-12-09T07:00:50.984Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-09T07:00:50.984Z] > authorizing via signed-in user
+[debug] [2019-12-09T07:00:50.984Z] [iam] checking project bpmn-taugor for permissions ["firebase.projects.get"]
+[debug] [2019-12-09T07:00:50.986Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/bpmn-taugor:testIamPermissions  
+
+[debug] [2019-12-09T07:00:52.049Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-09T07:00:52.052Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/bpmn-taugor  
+ 
+[debug] [2019-12-09T07:00:53.580Z] <<< HTTP RESPONSE 200
+[warn] ⚠  Your requested "node" version "10" doesn't match your global version "11"
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/" for Cloud Functions...
+[debug] [2019-12-09T07:00:53.889Z] [worker-~diagnostic~-d00f0edd-9f94-4ceb-a75b-c71dc88c0ce0]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50780.sock
+[debug] [2019-12-09T07:00:53.890Z] [worker-~diagnostic~-d00f0edd-9f94-4ceb-a75b-c71dc88c0ce0]: BUSY
+[debug] [2019-12-09T07:00:54.304Z] [runtime-status] [50780] Functions runtime initialized. {"cwd":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api","node_version":"11.15.0"}
+[debug] [2019-12-09T07:00:54.306Z] [runtime-status] [50780] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-09T07:00:54.310Z] [runtime-status] [50780] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-09T07:00:54.313Z] [runtime-status] [50780] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-09T07:00:54.314Z] [runtime-status] [50780] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[webApi]: http function initialized (http://localhost:5000/bpmn-taugor/us-central1/webApi).
+[debug] [2019-12-09T07:00:54.480Z] [worker-~diagnostic~-d00f0edd-9f94-4ceb-a75b-c71dc88c0ce0]: exited
+[debug] [2019-12-09T07:00:54.480Z] [worker-~diagnostic~-d00f0edd-9f94-4ceb-a75b-c71dc88c0ce0]: FINISHED
+[debug] [2019-12-09T07:00:55.007Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authenticate --> webApi
+[debug] [2019-12-09T07:00:55.021Z] [worker-webApi-93529744-3ff9-40f5-8351-14a659864644]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50781.sock
+[debug] [2019-12-09T07:00:55.021Z] [worker-webApi-93529744-3ff9-40f5-8351-14a659864644]: BUSY
+[debug] [2019-12-09T07:00:55.553Z] [runtime-status] [50781] Functions runtime initialized. {"cwd":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api","node_version":"11.15.0"}
+[debug] [2019-12-09T07:00:55.555Z] [runtime-status] [50781] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-09T07:00:55.558Z] [runtime-status] [50781] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-09T07:00:55.560Z] [runtime-status] [50781] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-09T07:00:55.561Z] [runtime-status] [50781] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-09T07:00:55.655Z] [runtime-status] [50781] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T07:00:55.656Z] [runtime-status] [50781] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T07:00:55.656Z] [runtime-status] [50781] Running webApi in mode HTTPS
+[debug] [2019-12-09T07:00:55.658Z] [runtime-status] [50781] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50781.sock
+[debug] [2019-12-09T07:00:55.666Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T07:00:55.685Z] [runtime-status] [50781] Ephemeral server handling GET request
+[debug] [2019-12-09T07:00:55.693Z] [runtime-status] [50781] Ephemeral server survived.
+[info] >  TypeError: (0 , _firebaseBasicService.uid) is not a function
+[info] >      at /Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/dist/routes/Auth.js:17:48
+[info] >      at Layer.handle [as handle_request] (/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at next (/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/express/lib/router/route.js:137:13)
+[info] >      at Route.dispatch (/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/express/lib/router/route.js:112:3)
+[info] >      at Layer.handle [as handle_request] (/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at /Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/express/lib/router/index.js:281:22
+[info] >      at Function.process_params (/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/express/lib/router/index.js:335:12)
+[info] >      at next (/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/express/lib/router/index.js:275:10)
+[info] >      at cors (/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/cors/lib/index.js:188:7)
+[info] >      at /Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/cors/lib/index.js:224:17
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T07:00:55.708Z] [worker-webApi-93529744-3ff9-40f5-8351-14a659864644]: IDLE
+[debug] [2019-12-09T07:01:01.154Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authenticate --> webApi
+[debug] [2019-12-09T07:01:01.155Z] [worker-webApi-93529744-3ff9-40f5-8351-14a659864644]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50781.sock
+[debug] [2019-12-09T07:01:01.155Z] [worker-webApi-93529744-3ff9-40f5-8351-14a659864644]: BUSY
+[debug] [2019-12-09T07:01:01.155Z] [runtime-status] [50781] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T07:01:01.156Z] [runtime-status] [50781] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T07:01:01.156Z] [runtime-status] [50781] Running webApi in mode HTTPS
+[debug] [2019-12-09T07:01:01.156Z] [runtime-status] [50781] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50781.sock
+[debug] [2019-12-09T07:01:01.158Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T07:01:01.164Z] [runtime-status] [50781] Ephemeral server handling GET request
+[debug] [2019-12-09T07:01:01.164Z] [runtime-status] [50781] Ephemeral server survived.
+[info] >  TypeError: (0 , _firebaseBasicService.uid) is not a function
+[info] >      at /Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/dist/routes/Auth.js:17:48
+[info] >      at Layer.handle [as handle_request] (/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at next (/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/express/lib/router/route.js:137:13)
+[info] >      at Route.dispatch (/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/express/lib/router/route.js:112:3)
+[info] >      at Layer.handle [as handle_request] (/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at /Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/express/lib/router/index.js:281:22
+[info] >      at Function.process_params (/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/express/lib/router/index.js:335:12)
+[info] >      at next (/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/express/lib/router/index.js:275:10)
+[info] >      at cors (/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/cors/lib/index.js:188:7)
+[info] >      at /Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/cors/lib/index.js:224:17
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T07:01:01.241Z] [worker-webApi-93529744-3ff9-40f5-8351-14a659864644]: IDLE
+[debug] [2019-12-09T07:01:49.843Z] File /Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/src/routes/Auth.js changed, reloading triggers
+[debug] [2019-12-09T07:01:49.938Z] File /Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/dist/routes/Auth.js changed, reloading triggers
+[debug] [2019-12-09T07:01:50.040Z] File /Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/dist/routes/Auth.js changed, reloading triggers
+[debug] [2019-12-09T07:01:51.045Z] [worker-pool]: Shutting down IDLE worker (webApi)
+[debug] [2019-12-09T07:01:51.057Z] [worker-~diagnostic~-e49ce5d6-1556-4a68-bad2-c666b1bf173c]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50785.sock
+[debug] [2019-12-09T07:01:51.057Z] [worker-~diagnostic~-e49ce5d6-1556-4a68-bad2-c666b1bf173c]: BUSY
+[debug] [2019-12-09T07:01:51.060Z] [worker-webApi-93529744-3ff9-40f5-8351-14a659864644]: exited
+[debug] [2019-12-09T07:01:51.060Z] [worker-webApi-93529744-3ff9-40f5-8351-14a659864644]: FINISHED
+[debug] [2019-12-09T07:01:52.224Z] [runtime-status] [50785] Functions runtime initialized. {"cwd":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api","node_version":"11.15.0"}
+[debug] [2019-12-09T07:01:52.230Z] [runtime-status] [50785] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-09T07:01:52.235Z] [runtime-status] [50785] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-09T07:01:52.238Z] [runtime-status] [50785] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-09T07:01:52.240Z] [runtime-status] [50785] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-09T07:01:52.513Z] [worker-~diagnostic~-e49ce5d6-1556-4a68-bad2-c666b1bf173c]: exited
+[debug] [2019-12-09T07:01:52.513Z] [worker-~diagnostic~-e49ce5d6-1556-4a68-bad2-c666b1bf173c]: FINISHED
+[debug] [2019-12-09T07:01:53.213Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authenticate --> webApi
+[debug] [2019-12-09T07:01:53.222Z] [worker-webApi-4394d64f-bae9-403a-96bd-6f88f2ef75df]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50794.sock
+[debug] [2019-12-09T07:01:53.222Z] [worker-webApi-4394d64f-bae9-403a-96bd-6f88f2ef75df]: BUSY
+[debug] [2019-12-09T07:01:53.596Z] [runtime-status] [50794] Functions runtime initialized. {"cwd":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api","node_version":"11.15.0"}
+[debug] [2019-12-09T07:01:53.599Z] [runtime-status] [50794] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-09T07:01:53.602Z] [runtime-status] [50794] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-09T07:01:53.604Z] [runtime-status] [50794] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-09T07:01:53.605Z] [runtime-status] [50794] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-09T07:01:53.698Z] [runtime-status] [50794] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T07:01:53.699Z] [runtime-status] [50794] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T07:01:53.699Z] [runtime-status] [50794] Running webApi in mode HTTPS
+[debug] [2019-12-09T07:01:53.702Z] [runtime-status] [50794] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50794.sock
+[debug] [2019-12-09T07:01:53.712Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T07:01:53.734Z] [runtime-status] [50794] Ephemeral server handling GET request
+[debug] [2019-12-09T07:01:53.833Z] [runtime-status] [50794] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T07:01:53.844Z] [worker-webApi-4394d64f-bae9-403a-96bd-6f88f2ef75df]: IDLE
+[debug] [2019-12-09T07:02:04.765Z] File /Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/src/routes/Auth.js changed, reloading triggers
+[debug] [2019-12-09T07:02:04.866Z] File /Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/src/routes/Auth.js changed, reloading triggers
+[debug] [2019-12-09T07:02:04.966Z] File /Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/dist/routes/Auth.js changed, reloading triggers
+[debug] [2019-12-09T07:02:05.066Z] File /Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/dist/routes/Auth.js changed, reloading triggers
+[debug] [2019-12-09T07:02:06.068Z] [worker-pool]: Shutting down IDLE worker (webApi)
+[debug] [2019-12-09T07:02:06.079Z] [worker-~diagnostic~-c698a11b-24d0-4515-8602-a3bf651e6c1b]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50795.sock
+[debug] [2019-12-09T07:02:06.080Z] [worker-~diagnostic~-c698a11b-24d0-4515-8602-a3bf651e6c1b]: BUSY
+[debug] [2019-12-09T07:02:06.082Z] [worker-webApi-4394d64f-bae9-403a-96bd-6f88f2ef75df]: exited
+[debug] [2019-12-09T07:02:06.082Z] [worker-webApi-4394d64f-bae9-403a-96bd-6f88f2ef75df]: FINISHED
+[debug] [2019-12-09T07:02:06.519Z] [runtime-status] [50795] Functions runtime initialized. {"cwd":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api","node_version":"11.15.0"}
+[debug] [2019-12-09T07:02:06.521Z] [runtime-status] [50795] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-09T07:02:06.524Z] [runtime-status] [50795] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-09T07:02:06.525Z] [runtime-status] [50795] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-09T07:02:06.526Z] [runtime-status] [50795] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-09T07:02:06.636Z] [worker-~diagnostic~-c698a11b-24d0-4515-8602-a3bf651e6c1b]: exited
+[debug] [2019-12-09T07:02:06.636Z] [worker-~diagnostic~-c698a11b-24d0-4515-8602-a3bf651e6c1b]: FINISHED
+[debug] [2019-12-09T07:08:41.921Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T07:08:41.935Z] [worker-webApi-b34b3cb3-3710-4c14-93fa-e516be3d8545]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50943.sock
+[debug] [2019-12-09T07:08:41.935Z] [worker-webApi-b34b3cb3-3710-4c14-93fa-e516be3d8545]: BUSY
+[debug] [2019-12-09T07:08:42.910Z] [runtime-status] [50943] Functions runtime initialized. {"cwd":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api","node_version":"11.15.0"}
+[debug] [2019-12-09T07:08:42.913Z] [runtime-status] [50943] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-09T07:08:42.934Z] [runtime-status] [50943] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-09T07:08:42.938Z] [runtime-status] [50943] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-09T07:08:42.940Z] [runtime-status] [50943] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-09T07:08:43.198Z] [runtime-status] [50943] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T07:08:43.199Z] [runtime-status] [50943] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T07:08:43.199Z] [runtime-status] [50943] Running webApi in mode HTTPS
+[debug] [2019-12-09T07:08:43.203Z] [runtime-status] [50943] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50943.sock
+[debug] [2019-12-09T07:08:43.206Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T07:08:43.220Z] [runtime-status] [50943] Ephemeral server handling GET request
+[debug] [2019-12-09T07:08:43.223Z] [runtime-status] [50943] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T07:08:43.240Z] [worker-webApi-b34b3cb3-3710-4c14-93fa-e516be3d8545]: IDLE
+[debug] [2019-12-09T07:09:02.129Z] File /Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/src/routes/Auth.js changed, reloading triggers
+[debug] [2019-12-09T07:09:02.225Z] File /Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/dist/routes/Auth.js changed, reloading triggers
+[debug] [2019-12-09T07:09:02.326Z] File /Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/dist/routes/Auth.js changed, reloading triggers
+[debug] [2019-12-09T07:09:03.329Z] [worker-pool]: Shutting down IDLE worker (webApi)
+[debug] [2019-12-09T07:09:03.340Z] [worker-~diagnostic~-d334cfe7-e2a9-41d7-b1cc-29ebfd0ea665]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50967.sock
+[debug] [2019-12-09T07:09:03.340Z] [worker-~diagnostic~-d334cfe7-e2a9-41d7-b1cc-29ebfd0ea665]: BUSY
+[debug] [2019-12-09T07:09:03.341Z] [worker-webApi-b34b3cb3-3710-4c14-93fa-e516be3d8545]: exited
+[debug] [2019-12-09T07:09:03.341Z] [worker-webApi-b34b3cb3-3710-4c14-93fa-e516be3d8545]: FINISHED
+[debug] [2019-12-09T07:09:04.213Z] [runtime-status] [50967] Functions runtime initialized. {"cwd":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api","node_version":"11.15.0"}
+[debug] [2019-12-09T07:09:04.216Z] [runtime-status] [50967] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-09T07:09:04.221Z] [runtime-status] [50967] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-09T07:09:04.224Z] [runtime-status] [50967] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-09T07:09:04.225Z] [runtime-status] [50967] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-09T07:09:04.485Z] [worker-~diagnostic~-d334cfe7-e2a9-41d7-b1cc-29ebfd0ea665]: exited
+[debug] [2019-12-09T07:09:04.485Z] [worker-~diagnostic~-d334cfe7-e2a9-41d7-b1cc-29ebfd0ea665]: FINISHED
+[debug] [2019-12-09T07:09:07.024Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T07:09:07.034Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T07:09:07.034Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T07:09:07.376Z] [runtime-status] [50971] Functions runtime initialized. {"cwd":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api","node_version":"11.15.0"}
+[debug] [2019-12-09T07:09:07.378Z] [runtime-status] [50971] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-09T07:09:07.381Z] [runtime-status] [50971] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-09T07:09:07.382Z] [runtime-status] [50971] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-09T07:09:07.383Z] [runtime-status] [50971] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/zerobyte/dev/c/zero/taugor-ged/taugor-bpmn-api/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-09T07:09:07.488Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T07:09:07.490Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T07:09:07.490Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T07:09:07.493Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T07:09:07.500Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T07:09:07.511Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T07:09:07.634Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T07:09:07.656Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T07:09:30.365Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T07:09:30.365Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T07:09:30.365Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T07:09:30.366Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T07:09:30.367Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T07:09:30.367Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T07:09:30.368Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T07:09:30.371Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T07:09:30.374Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T07:09:30.378Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T07:09:30.382Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T10:42:17.482Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T10:42:17.487Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T10:42:17.487Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T10:42:17.494Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T10:42:17.498Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T10:42:17.499Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T10:42:17.499Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T10:42:17.501Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T10:42:17.507Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T10:42:17.511Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T10:42:17.515Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T10:44:06.761Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T10:44:06.761Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T10:44:06.761Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T10:44:06.762Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T10:44:06.762Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T10:44:06.762Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T10:44:06.763Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T10:44:06.763Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T10:44:06.766Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T10:44:06.768Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T10:44:06.770Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T10:44:08.881Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T10:44:08.881Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T10:44:08.882Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T10:44:08.883Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T10:44:08.883Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T10:44:08.884Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T10:44:08.884Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T10:44:08.884Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T10:44:08.886Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T10:44:08.888Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T10:44:08.892Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T10:50:56.563Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T10:50:56.566Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T10:50:56.566Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T10:50:56.571Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T10:50:56.576Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T10:50:56.576Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T10:50:56.576Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T10:50:56.579Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T10:50:56.586Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T10:50:56.587Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T10:50:56.593Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T10:55:05.031Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T10:55:05.031Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T10:55:05.031Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T10:55:05.032Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T10:55:05.037Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T10:55:05.037Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T10:55:05.038Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T10:55:05.038Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T10:55:05.042Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T10:55:05.045Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T10:55:05.048Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T11:03:45.749Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T11:03:45.750Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:03:45.750Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T11:03:45.753Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T11:03:45.756Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T11:03:45.756Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T11:03:45.756Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:03:45.759Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T11:03:45.761Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T11:03:45.765Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T11:03:45.769Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T11:05:35.048Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T11:05:35.048Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:05:35.049Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T11:05:35.054Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T11:05:35.056Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T11:05:35.056Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T11:05:35.057Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:05:35.061Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T11:05:35.069Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T11:05:35.082Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T11:05:35.090Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T11:06:14.520Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T11:06:14.520Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:06:14.520Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T11:06:14.523Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T11:06:14.525Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T11:06:14.525Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T11:06:14.527Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:06:14.530Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T11:06:14.542Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T11:06:14.543Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T11:06:14.551Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T11:10:24.972Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T11:10:24.972Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:10:24.973Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T11:10:24.974Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T11:10:24.975Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T11:10:24.975Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T11:10:24.976Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:10:24.981Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T11:10:24.986Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T11:10:24.989Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T11:10:24.991Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T11:11:18.715Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T11:11:18.715Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:11:18.715Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T11:11:18.719Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T11:11:18.720Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T11:11:18.720Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T11:11:18.721Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:11:18.723Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T11:11:18.729Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T11:11:18.732Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T11:11:18.738Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T11:11:38.839Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T11:11:38.839Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:11:38.839Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T11:11:38.840Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T11:11:38.841Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T11:11:38.841Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T11:11:38.841Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:11:38.844Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T11:11:38.850Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T11:11:38.854Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T11:11:38.861Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T11:12:02.936Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T11:12:02.936Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:12:02.937Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T11:12:02.937Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T11:12:02.938Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T11:12:02.938Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T11:12:02.938Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:12:02.940Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T11:12:02.943Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T11:12:02.945Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T11:12:02.951Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T11:13:49.303Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T11:13:49.303Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:13:49.303Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T11:13:49.309Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T11:13:49.309Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T11:13:49.310Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T11:13:49.315Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:13:49.317Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T11:13:49.323Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T11:13:49.324Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T11:13:49.328Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T11:14:37.456Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T11:14:37.456Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:14:37.456Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T11:14:37.459Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T11:14:37.465Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T11:14:37.465Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T11:14:37.465Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:14:37.467Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T11:14:37.475Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T11:14:37.477Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T11:14:37.481Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T11:17:00.873Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T11:17:00.873Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:17:00.873Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T11:17:00.877Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T11:17:00.878Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T11:17:00.878Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T11:17:00.878Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:17:00.883Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T11:17:00.887Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T11:17:00.891Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T11:17:00.893Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T11:21:07.028Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T11:21:07.029Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:21:07.029Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T11:21:07.033Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T11:21:07.034Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T11:21:07.034Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T11:21:07.035Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:21:07.038Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T11:21:07.046Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T11:21:07.047Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T11:21:07.049Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T11:32:34.504Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T11:32:34.509Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:32:34.509Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T11:32:34.514Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T11:32:34.516Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T11:32:34.516Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T11:32:34.517Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:32:34.523Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T11:32:34.538Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T11:32:34.538Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T11:32:34.541Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T11:32:42.403Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T11:32:42.403Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:32:42.404Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T11:32:42.405Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T11:32:42.406Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T11:32:42.406Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T11:32:42.407Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:32:42.409Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T11:32:42.411Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T11:32:42.417Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T11:32:42.418Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T11:36:48.074Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T11:36:48.074Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:36:48.074Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T11:36:48.075Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T11:36:48.076Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T11:36:48.076Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T11:36:48.077Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T11:36:48.092Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T11:36:48.093Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T11:36:48.099Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T11:36:48.104Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T12:54:29.843Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T12:54:29.847Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T12:54:29.847Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T12:54:29.851Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T12:54:29.855Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T12:54:29.855Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T12:54:29.855Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T12:54:29.862Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T12:54:29.870Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T12:54:29.872Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T12:54:29.880Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
+[debug] [2019-12-09T12:54:41.226Z] Accepted request GET /bpmn-taugor/us-central1/webApi/api/v1/authentication/token --> webApi
+[debug] [2019-12-09T12:54:41.226Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: Assigning socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T12:54:41.226Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: BUSY
+[debug] [2019-12-09T12:54:41.227Z] [runtime-status] [50971] Trigger "webApi" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "webApi"
+[debug] [2019-12-09T12:54:41.228Z] [runtime-status] [50971] triggerDefinition {"httpsTrigger":{},"name":"webApi","entryPoint":"webApi"}
+[debug] [2019-12-09T12:54:41.228Z] [runtime-status] [50971] Running webApi in mode HTTPS
+[debug] [2019-12-09T12:54:41.229Z] [runtime-status] [50971] Attempting to listen to socketPath: /var/folders/h8/0g22zm7s3v5f3zk187t1874w0000gn/T/fire_emu_50971.sock
+[debug] [2019-12-09T12:54:41.230Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-09T12:54:41.232Z] [runtime-status] [50971] Ephemeral server handling GET request
+[debug] [2019-12-09T12:54:41.236Z] [runtime-status] [50971] Ephemeral server survived.
+[info] i  functions: Finished "webApi" in ~1s
+[debug] [2019-12-09T12:54:41.239Z] [worker-webApi-2681f27f-2b79-4f92-86d5-ae315ae31b62]: IDLE
