@@ -1,5 +1,5 @@
 {
   "projects": {
-    "default": "bpmn-taugor"
+    "default": "DEFAULT_PROJECT_NAME"
   }
 }
