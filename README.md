@@ -1,10 +1,18 @@
 # template-firebase-nodejs-rest-api
 
-Origin for standardised Firebase structured API.
+Origin for standardised for sample of structured REST API.
+
+> There is a Firebase module to be coupled within this system for handling functions and react to updates on collections.
 
 > This API makes use of BasicService library, which is designed to be a firebase firestore handler that solves several firebase query limitations.
 
 > Generate a private key json file and place it at the root folder. After this, reference it at src/index.js
+
+# Local Start-up
+
+Simply start by **yarn install**.
+
+After the modules are installed, run with **yarn start**.
 
 # Module Routers
 
