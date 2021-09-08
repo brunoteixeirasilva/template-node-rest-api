@@ -1,5 +1,9 @@
 {
 	"main": "dist/index.js",
+	"name": "@brunoteixeirasilva/template-node-rest-api",
+	"author": {
+		"name": "Bruno Teixeira da Silva"
+	},
 	"scripts": {
 		"lint": "xo",
 		"setup": "yarn firebase use --add ",
