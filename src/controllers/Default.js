@@ -5,7 +5,7 @@
  */
 const Default = (app) => {
 	app.get('/*', (req, res) => {
-		return res.send('Hi, welcome to a testing RESTful API.');
+		return res.send('Hi, welcome to a testing <b>RESTful</b> API.');
 	});
 };
 

@@ -1,20 +1,26 @@
+import ObjectModel from 'models/ObjectModel';
+import Token from 'models/Token';
+
 /**
  * Basic structure of the user stored
  * For purposes of Domain-driven Design
  *
+ * @property {number} id
+ * @property {Date} createdOn
  * @property {string} fullName
  * @property {string} email
- * @property {string} token
+//  * @property {Token} token
  */
-class User {
+class User extends ObjectModel {
 	fullName = null;
 	email = null;
-	token = null;
+	// token = null;
 
-	constructor(fullName, email, token) {
+	constructor(id, fullName, email) {
+		super(id);
 		this.fullName = fullName;
 		this.email = email;
-		this.token = token;
+		//this.token = !token ? new Token(this.id) : token;
 	}
 }
 
