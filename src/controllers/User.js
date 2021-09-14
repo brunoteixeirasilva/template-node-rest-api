@@ -1,7 +1,7 @@
 import { Users } from 'database';
 import deleted from 'util/deleted';
 import forbidden from 'util/forbidden';
-import Response from '/models/Response';
+import { HttpMessage, Response } from 'models';
 
 /**
  * Controller for accessing Users
@@ -35,7 +35,7 @@ const User = (app) => {
 			}
 		}
 
-		return forbidden(res).send({ message: 'Sorry, invalid user ID.' });
+		return forbidden(res).send(new HttpMessage('Sorry, invalid user ID.'));
 	});
 	app.delete('/user/:userId', (req, res) => {
 		if (
@@ -47,7 +47,7 @@ const User = (app) => {
 			// return deleted(res).send(new Response('OK', 204));
 		}
 
-		return forbidden(res).send({ message: 'Sorry, invalid user ID.' });
+		return forbidden(res).send(new HttpMessage('Sorry, invalid user ID.'));
 	});
 };
 

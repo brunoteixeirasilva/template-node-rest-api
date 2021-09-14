@@ -1,8 +1,7 @@
 import { Tokens } from 'database';
-import { Users } from 'database';
-import deleted from 'util/deleted';
+// import deleted from 'util/deleted';
 import forbidden from 'util/forbidden';
-import Response from '/models/Response';
+import { HttpMessage, Response } from 'models';
 
 /**
  * Controller for accessing Tokens
@@ -36,7 +35,7 @@ const Token = (app) => {
 			}
 		}
 
-		return forbidden(res).send({ message: 'Sorry, invalid token.' });
+		return forbidden(res).send(new HttpMessage('Sorry, invalid token.'));
 	});
 };
 

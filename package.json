@@ -1,6 +1,7 @@
 {
 	"main": "dist/index.js",
 	"name": "@brunoteixeirasilva/template-node-rest-api",
+	"version": "1.0.1",
 	"author": {
 		"name": "Bruno Teixeira da Silva"
 	},
