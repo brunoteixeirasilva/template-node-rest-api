@@ -4,13 +4,16 @@ import deleted from 'util/deleted';
 import forbidden from 'util/forbidden';
 import Response from '/models/Response';
 
+// For giving more examples on abstraction
+const modelName = 'auth';
+
 /**
  * Controller for Authentication methods
  *
  * @param {Express.Application} app
  */
 const Authentication = (app) => {
-	app.post('/auth', (req, res) => {
+	app.post(`/${modelName}`, (req, res) => {
 		// TODO: implementation of req.params / req.body reading
 		// TODO: include password validation process
 
@@ -45,7 +48,7 @@ const Authentication = (app) => {
 			message: 'Sorry, invalid authentication.',
 		});
 	});
-	app.delete('/auth/:token', (req, res) => {
+	app.delete(`/${modelName}/:token`, (req, res) => {
 		let foundTokenIndex, foundToken;
 
 		if (!!req && !!req.params) {

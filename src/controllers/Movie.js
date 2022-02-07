@@ -1,5 +1,5 @@
 import { Movies } from 'database';
-// import deleted from 'util/deleted';
+import deleted from 'util/deleted';
 import forbidden from 'util/forbidden';
 import { HttpMessage, Response } from 'models';
 
@@ -45,6 +45,18 @@ const Movie = (app) => {
 		}
 
 		return forbidden(res).send(new HttpMessage('Sorry, invalid movie.'));
+	});
+
+	app.delete(`/${modelName}/:movieId`, (req, res) => {
+		if (
+			!!req &&
+			!!req.params &&
+			Movies.find((item) => item.id === req.params.movieId)
+		) {
+			return deleted(res).send(new Response('OK', 204));
+		}
+
+		return forbidden(res).send(new HttpMessage('Sorry, invalid movie ID.'));
 	});
 };
 
