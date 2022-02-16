@@ -7,7 +7,7 @@
  * @returns {string} token with 36bytes
  */
 const rand = function () {
-	return Math.random().toString(36).substr(2); // remove `0.`
+	return Math.random().toString(36).substring(2); // remove `0.`
 };
 
 /**
