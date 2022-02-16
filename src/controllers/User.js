@@ -3,13 +3,16 @@ import deleted from 'util/deleted';
 import forbidden from 'util/forbidden';
 import { HttpMessage, Response } from 'models';
 
+// For giving more examples on abstraction
+const modelName = 'user';
+
 /**
  * Controller for accessing Users
  *
  * @param {Express.Application} app
  */
 const User = (app) => {
-	app.get('/user', (req, res) => {
+	app.get(`/${modelName}`, (req, res) => {
 		// TODO: implementation of req.params / req.body reading
 		// TODO: include password validation process
 
@@ -18,7 +21,7 @@ const User = (app) => {
 		//                     Users data-set
 		return res.send(new Response(Users));
 	});
-	app.get('/user/:userId', (req, res) => {
+	app.get(`/${modelName}/:userId`, (req, res) => {
 		// TODO: implementation of req.params / req.body reading
 		// TODO: include password validation process
 
@@ -37,14 +40,13 @@ const User = (app) => {
 
 		return forbidden(res).send(new HttpMessage('Sorry, invalid user ID.'));
 	});
-	app.delete('/user/:userId', (req, res) => {
+	app.delete(`/${modelName}/:userId`, (req, res) => {
 		if (
 			!!req &&
 			!!req.params &&
 			Users.find((item) => item.id === req.params.userId)
 		) {
-			return deleted(res).send();
-			// return deleted(res).send(new Response('OK', 204));
+			return deleted(res).send(new Response('OK', 204));
 		}
 
 		return forbidden(res).send(new HttpMessage('Sorry, invalid user ID.'));
