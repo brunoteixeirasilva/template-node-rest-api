@@ -6,6 +6,7 @@ import Authentication from 'controllers/Authentication';
 // Model-based controllers
 import Comment from 'controllers/Comment';
 import Movie from 'controllers/Movie';
+import Pet from 'controllers/Pet';
 import User from 'controllers/User';
 import Token from 'controllers/Token';
 // TODO: import YOUR_MODULE_ROUTER from './YOUR_MODULE_ROUTER';
@@ -18,6 +19,7 @@ const Router = (app) => {
 		// Our controllers
 		Comment(app);
 		Movie(app);
+		Pet(app);
 		User(app);
 		Token(app);
 		// TODO: ADD YOUR_MODULE_ROUTER(app);
