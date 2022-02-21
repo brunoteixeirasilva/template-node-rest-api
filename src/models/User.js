@@ -1,5 +1,5 @@
 import ObjectModel from 'models/ObjectModel';
-import Token from 'models/Token';
+import applyHashCode from 'util/applyHashCode';
 
 /**
  * Basic structure of the user stored
@@ -9,18 +9,19 @@ import Token from 'models/Token';
  * @property {Date} createdOn
  * @property {string} fullName
  * @property {string} email
-//  * @property {Token} token
+ * @property {string} password
  */
 class User extends ObjectModel {
 	fullName = null;
 	email = null;
-	// token = null;
+	password = null;
 
-	constructor(id, fullName, email) {
+	constructor(id, fullName, email, password) {
 		super(id);
 		this.fullName = fullName;
 		this.email = email;
-		//this.token = !token ? new Token(this.id) : token;
+		this.password = applyHashCode(password);
+		console.log('encoded-pwd: ' + this.password);
 	}
 }
 

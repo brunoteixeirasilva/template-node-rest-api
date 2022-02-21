@@ -1,5 +1,6 @@
 import { Tokens, Users } from 'database';
 import { Token } from 'models';
+import applyHashCode from 'util/applyHashCode';
 import deleted from 'util/deleted';
 import forbidden from 'util/forbidden';
 import Response from '/models/Response';
@@ -15,14 +16,17 @@ const modelName = 'auth';
 const Authentication = (app) => {
 	app.post(`/${modelName}`, (req, res) => {
 		// TODO: implementation of req.params / req.body reading
-		// TODO: include password validation process
 
-		if (!!req && !!req.body) {
+		if (!!req && !!req.body && !!req.body.email && !!req.body.password) {
 			const foundUser = Users.find(
-				(item) => item.email === req.body.email
+				(item) =>
+					item.email === req.body.email &&
+					item.password === applyHashCode(req.body.password)
 			);
 
 			if (!!foundUser) {
+				// TODO: include password validation process
+
 				// Now, based on the user ID,
 				// We need to find the token assigned to it
 				let usableToken = Tokens.find(
