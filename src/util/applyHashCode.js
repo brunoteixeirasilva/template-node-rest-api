@@ -1,3 +1,8 @@
+/**
+ * Applies a hash to a given string
+ *
+ * @param {string} stringToBeHashed The string to be hashed
+ */
 function applyHashCode(stringToBeHashed) {
 	var hash = 0,
 		i,

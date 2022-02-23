@@ -11,7 +11,7 @@ const PetController = (app) => {
 	app.get(`/${modelName}`, (req, res) => {
 		return res.send(new Response(PetDatabase));
 	});
-	app.post(`/${modeName}`, (req, res) => {
+	app.post(`/${modelName}`, (req, res) => {
 		const { body } = req;
 
 		if (!body.name || body.name.trim() === '')

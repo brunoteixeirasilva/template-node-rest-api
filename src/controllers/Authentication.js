@@ -43,7 +43,10 @@ const Authentication = (app) => {
 				}
 
 				return res.send(
-					new Response({ user: foundUser, token: usableToken.id })
+					new Response({
+						user: foundUser.pipe(),
+						token: usableToken.id,
+					})
 				);
 			}
 		}

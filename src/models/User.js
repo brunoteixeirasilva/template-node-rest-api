@@ -23,6 +23,10 @@ class User extends ObjectModel {
 		this.password = applyHashCode(password);
 		console.log('encoded-pwd: ' + this.password);
 	}
+
+	pipe() {
+		return this.cleanup(['password']);
+	}
 }
 
 export default User;

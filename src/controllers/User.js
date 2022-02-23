@@ -1,4 +1,4 @@
-import { Users } from 'database';
+import Users from 'database/Users';
 import deleted from 'util/deleted';
 import forbidden from 'util/forbidden';
 import { HttpMessage, Response } from 'models';
@@ -19,7 +19,7 @@ const User = (app) => {
 		// Fluency on reading: To be sent new
 		//                     Response containing
 		//                     Users data-set
-		return res.send(new Response(Users));
+		return res.send(new Response(Users.map((item) => item.pipe())));
 	});
 	app.get(`/${modelName}/:userId`, (req, res) => {
 		// TODO: implementation of req.params / req.body reading
@@ -34,7 +34,7 @@ const User = (app) => {
 				// Fluency on reading: To be sent new
 				//                     Response containing
 				//                     Users data-set
-				return res.send(new Response(foundUser));
+				return res.send(new Response(foundUser.pipe()));
 			}
 		}
 
