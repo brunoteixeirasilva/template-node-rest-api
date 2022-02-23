@@ -48,7 +48,7 @@
 ### 23/02/2022
 
 * Develop basic authentication request
-  * [0.1h/0.5h] Run manual testing on the changes
+  * [0.1h/0.7h] Run manual testing on the changes
     * [DONE] Test Application
   * [BUGFIX] Exposing the password while POST to /auth
     * [0.2h/0.2h] Add "cleanup" function to the ObjectModel class

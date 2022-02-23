@@ -21,7 +21,6 @@ class User extends ObjectModel {
 		this.fullName = fullName;
 		this.email = email;
 		this.password = applyHashCode(password);
-		console.log('encoded-pwd: ' + this.password);
 	}
 
 	pipe() {
