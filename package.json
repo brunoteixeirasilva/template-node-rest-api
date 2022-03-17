@@ -1,10 +1,13 @@
 {
 	"main": "dist/index.js",
 	"name": "@brunoteixeirasilva/template-node-rest-api",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"author": {
 		"name": "Bruno Teixeira da Silva"
 	},
+	"contributors": [
+		"grignolabusiness@gmail.com"
+	],
 	"scripts": {
 		"lint": "xo",
 		"setup": "yarn firebase use --add ",
