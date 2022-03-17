@@ -44,7 +44,8 @@ const User = (app) => {
 		if (
 			!!req &&
 			!!req.params &&
-			Users.find((item) => item.id === req.params.userId)
+			typeof req.params.userId === 'number' &&
+			Users.find((item) => item.id === parseInt(req.params.userId))
 		) {
 			return deleted(res).send(new Response('OK', 204));
 		}

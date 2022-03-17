@@ -24,7 +24,7 @@ const Token = (app) => {
 
 		if (!!req && !!req.params) {
 			const foundToken = Tokens.find(
-				(item) => item.id === parseInt(req.params.tokenId)
+				(item) => item.id === req.params.tokenId
 			);
 
 			if (!!foundToken) {

@@ -9,7 +9,7 @@ class Animal extends ObjectModel {
 	gender = 'female';
 
 	constructor(name, age = 0, gender = 'female') {
-		super(null, null);
+		super();
 
 		// setting construction data
 		this.name = name;
