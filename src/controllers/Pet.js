@@ -15,7 +15,9 @@ const PetController = (app) => {
 		const { body } = req;
 
 		if (!body.name || body.name.trim() === '')
-			return res.send(new Response('Error! Pet name is missing.', 400));
+			return res.send(
+				new ErrorResponse('Error! Pet name is missing.', 400)
+			);
 
 		const newPet = new Pet(body.name);
 
